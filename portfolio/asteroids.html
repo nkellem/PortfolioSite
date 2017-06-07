@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "utf-8"/>
+		<meta name="viewport" content="width=device-width, minimumscale=1.0, maximum-scale=1.0" />
+		<link rel = "stylesheet" type = "text/css" href = "css/indexStylesheet.css">
+		<link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Ruda' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<title> Noah Kellem's Portfolio </title>
+	</head>
+	<body>
+		<div id = hamburgerOffset>
+			<div id = "hamburger">
+				<div id = "hamIcon">
+					<div id = "hamIconInner"></div>
+				</div>
+			</div>
+		</div>
+		<div id = "navigation">
+			<nav>	
+				<a href = "index.html" class = "link">Home</a>
+				<a href = "index.html#projects" class = "link" id = "current">My Projects</a>
+				<a href = "index.html#aboutMe" class = "link">About Me</a>
+				<a href = "index.html#contact" class = "link">Contact Me</a>
+				<a href = "documents/KellemNoah_Resume.pdf" class = "link">Resume</a>
+			</nav>
+		</div>
+		<div class = "bodyContent">
+			<h2 class = "bodyHeader">Programming: Asteroids</h2>
+			<div class = "hrLine3">
+					<div class = "gifAlign">
+						<img id = "ast" class= "offset lightbox 0" src = "images/asteroids.gif" alt = "animated gif of asteroids">
+					</div>
+				<p>
+					The above is an animated gif of gameplay from the version of Asteroids I coded from scratch in processing.
+				</p>
+				<p>
+					The game makes use of and implements real physics mechanics by using acceleration and velocity to determine
+					distance and movement of the player, bullets, and asteroids. It also implements collision detection on bullet-v-asteroid collisions
+					as well as asteroid-v-player collisions. It also implements Asteroids' original drift mechanic on the player
+					to simulate the feeling of actually being in space by conserving player momentum.
+				</p>
+			</div>
+		</div>
+		<footer>
+			<a href = "https://www.facebook.com/noah.kellem"><img src = "images/facebook.png" alt = "Facebook icon"></a> <a href = "https://www.linkedin.com/in/noah-kellem-68511ba4?authType=name&authToken=Bi8G"><img src = "images/linkedIn.png" alt = "Facebook icon"></a>
+			<p>© Noah Kellem. B.S. in Game Design and Development</p>
+		</footer>
+	</body>
+</html>

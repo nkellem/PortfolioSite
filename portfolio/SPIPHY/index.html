@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Speech to Giphy</title>
+        <link rel="stylesheet" href="style/stylesheet.css" type="text/css">
+        <!-- Import Google Web Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+        <!-- Import JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1 id="logo">SPIPHY</h1>
+        <div id="searchDiv">
+            <label for="searchField" id="searchLabel">Search For A Gif</label>
+            <img src="images/micIcon.png" alt="microphone icon" id="micIcon">
+            <input type="text" id="searchField" placeholder="Enter your search">
+            <button id="searchButton" name="search"></button>
+        </div>
+        <div id="comicDiv">
+            <!-- <button id="comicButton">Comic</button> -->
+            <label for="giphyToggle" id="giphyToggleLabel">Giphy</label>
+            <input type="radio" id="giphyToggle" checked>
+            <label for="flickrToggle" id="flickrToggleLabel">Flickr</label>
+            <input type="radio" id="flickrToggle">
+        </div>
+        <div id="gifDiv">
+            <p>Image Gets Displayed Here</p>
+        </div>
+        <div id="iconSetDiv">
+            <!-- <img src="images/favoriteIcon.png" class="linkIcon" id="favoriteIcon" alt="Favorite Icon"> -->
+            <img src="images/facebookIcon.png" class="linkIcon" id="facebookIcon" alt="Facebook Icon">
+            <a class="linkIcon" id="twitterLink" href="#">
+                <img src="images/twitterIcon.png" class="linkIcon" id="twitterIcon" alt="Twitter Icon">
+            </a>
+            <a class="linkIcon" id="saveLink" href="#" download="newGif.gif">
+                <img src="images/saveIcon.png" class="linkIcon" id="saveIcon" alt="Save Icon">
+            </a>
+            <!-- <img src="images/editIcon.png" class="linkIcon" id="editIcon" alt="Edit Icon"> -->
+        </div>
+        <div id="imageLinkDiv">
+            <input type="text" id="picLink" placeholder="Gif link goes here" disabled="disabled">
+        </div>
+        
+        <!-- Load all the scripts -->
+        <script src="js/speechRecognizer.js"></script>
+        <script src="js/searchAPI.js"></script>
+        <script src="js/twitterWidgetLoader.js"></script>
+        <script src="js/facebookSDK.js"></script>
+    </body>
+</html>
